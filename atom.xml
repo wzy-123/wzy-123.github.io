@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzy-123.github.io</id>
-    <title>吴振宇的博客</title>
-    <updated>2020-05-13T09:28:51.836Z</updated>
+    <title>WZY</title>
+    <updated>2020-05-13T09:39:35.366Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzy-123.github.io"/>
     <link rel="self" href="https://wzy-123.github.io/atom.xml"/>
     <logo>https://wzy-123.github.io/images/avatar.png</logo>
     <icon>https://wzy-123.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 吴振宇的博客</rights>
+    <rights>All rights reserved 2020, WZY</rights>
 </feed>
