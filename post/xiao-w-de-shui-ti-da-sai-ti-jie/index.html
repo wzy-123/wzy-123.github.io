@@ -4,11 +4,14 @@
     <meta charset="utf-8" >
 
 <title>小W的水题大赛 题解 | 吴振宇的博客</title>
+<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://wzy-123.github.io/favicon.ico?v=1589361049275">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://wzy-123.github.io/favicon.ico?v=1589360938575">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://wzy-123.github.io/styles/main.css">
 
 
@@ -18,94 +21,83 @@
 
   
 
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
-
-    <meta name="description" content="T1
-一个easy的二进制枚举
-var
-  n,m,i,s,sum:longint;//定义一堆乱七八糟的东西
-  b:array[0..20] of 0..1;//定义b数组
-begin
-  readln(m,n);//读入m和n（反了一..." />
-    <meta name="keywords" content="比赛题解" />
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://wzy-123.github.io">
-        <img src="https://wzy-123.github.io/images/avatar.png?v=1589360938575" class="site-logo">
-        <h1 class="site-title">吴振宇的博客</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://wzy-123.github.io">吴振宇的博客</a></h3>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://wzy-123.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">小W的水题大赛 题解</h2>
-            <div class="post-date">2020-04-24</div>
+          <li>
             
-            <div class="post-content" v-pre>
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>小W的水题大赛 题解</h1>
+            <p class="article-meta">
+              2020-04-24
+              
+                <a href="https://wzy-123.github.io/tag/Hh9ZzdxQU/" class="badge success">
+                  比赛题解
+                </a>
+              
+            </p>
+            
+            <div class="post-content">
               <h2 id="t1">T1</h2>
 <h3 id="一个easy的二进制枚举">一个easy的二进制枚举</h3>
 <pre><code class="language-pascal">var
@@ -261,46 +253,85 @@ end.
 </code></pre>
 
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://wzy-123.github.io/tag/Hh9ZzdxQU/" class="tag">
-                    比赛题解
-                  </a>
-                
-              </div>
-            
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
+          </article>
         </div>
+        <div class="paper" data-aos="fade-in">
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
+
+          
+        
       </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://wzy-123.github.io/images/avatar.png?v=1589361049275" class="no-responsive avatar">
+    <div class="text-muted">温故而知新</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://wzy-123.github.io/post/xiao-w-de-shui-ti-da-sai-ti-jie/">小W的水题大赛 题解</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://wzy-123.github.io/tag/Hh9ZzdxQU/" class="badge secondary">
+          比赛题解
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+     | <a class="rss" href="https://wzy-123.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <script type="application/javascript">
 
 AOS.init();
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+hljs.initHighlightingOnLoad()
 
 </script>
-
-
 
 
 
