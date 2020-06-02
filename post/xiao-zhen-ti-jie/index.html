@@ -1,21 +1,114 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://wzy-123.github.io</id>
-    <title>WZY&apos;s blog</title>
-    <updated>2020-06-02T12:17:31.780Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://wzy-123.github.io"/>
-    <link rel="self" href="https://wzy-123.github.io/atom.xml"/>
-    <logo>https://wzy-123.github.io/images/avatar.png</logo>
-    <icon>https://wzy-123.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, WZY&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[【小镇】题解]]></title>
-        <id>https://wzy-123.github.io/post/xiao-zhen-ti-jie/</id>
-        <link href="https://wzy-123.github.io/post/xiao-zhen-ti-jie/">
-        </link>
-        <updated>2020-06-02T12:15:58.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="题外话"><strong>题外话</strong></h3>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>【小镇】题解 | WZY&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://wzy-123.github.io/favicon.ico?v=1591100248967">
+<link rel="stylesheet" href="https://wzy-123.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="题外话
+考试的时候傻掉了，忘记用mapmapmap了。。
+显而易见，这道题用mapmapmap最简单（不用mapmapmap，反正我考试的时候就。。）
+思路
+读入k个数，建一个图记录他们出现的位置，然后四面八方的加起来，最后输出的数要除以2..." />
+    <meta name="keywords" content="题解" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://wzy-123.github.io">
+        <img src="https://wzy-123.github.io/images/avatar.png?v=1591100248967" class="site-logo">
+        <h1 class="site-title">WZY&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/wzy-123" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://wzy-123.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">【小镇】题解</h2>
+            <div class="post-date">2020-06-02</div>
+            
+            <div class="post-content" v-pre>
+              <h3 id="题外话"><strong>题外话</strong></h3>
 <p>考试的时候傻掉了，忘记用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">map</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">p</span></span></span></span>了。。</p>
 <p>显而易见，这道题用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">map</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">p</span></span></span></span>最简单（不用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">map</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">p</span></span></span></span>，反正我考试的时候就。。）</p>
 <h3 id="思路"><strong>思路</strong></h3>
@@ -45,6 +138,79 @@ int main()
 	return 0;
 }
 </code></pre>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://wzy-123.github.io/tag/izw49Dnov/" class="tag">
+                    题解
+                  </a>
+                
+              </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
