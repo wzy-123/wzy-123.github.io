@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzy-123.github.io</id>
     <title>WZY&apos;s blog</title>
-    <updated>2020-06-02T12:20:58.126Z</updated>
+    <updated>2020-06-02T12:27:52.550Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzy-123.github.io"/>
     <link rel="self" href="https://wzy-123.github.io/atom.xml"/>
@@ -10,7 +10,80 @@
     <icon>https://wzy-123.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, WZY&apos;s blog</rights>
     <entry>
-        <title type="html"><![CDATA[【小镇】题解]]></title>
+        <title type="html"><![CDATA[题解 CF628B 【New Skateboard】]]></title>
+        <id>https://wzy-123.github.io/post/ti-jie-cf628b-new-skateboard/</id>
+        <link href="https://wzy-123.github.io/post/ti-jie-cf628b-new-skateboard/">
+        </link>
+        <updated>2020-06-02T12:27:35.000Z</updated>
+        <content type="html"><![CDATA[<p><s>没人写题解？我来水一发QAQ。</s></p>
+<h3 id="题目"><strong>题目</strong></h3>
+<p>给出一个长度\le 3×10^5的字符串S，求S中能被4整除的字串有多少个。</p>
+<h3 id="思路"><strong>思路</strong></h3>
+<p>因为长度\le 3×10^5，故用单重循环做。</p>
+<p>因为是被<strong>4整除</strong>，所以只用判断最后两位是否能被4整除即可。</p>
+<p>抓住以上重点，单重循环要枚举什么也就出来了：<code>从第一位枚举到字符串长度减一位，将S[i]和S[i+1]转成数字，累加即可</code>。</p>
+<h3 id="累加分两种情况">累加分两种情况</h3>
+<ul>
+<li>
+<h4 id="判断sisi1是否是4的倍数如果是和加上现在的i">判断S[i]+S[i+1]是否是4的倍数，如果是，和加上现在的i。</h4>
+</li>
+<li>
+<h4 id="判断si是否是4的倍数如果是和加1">判断S[i]是否是4的倍数，如果是，和加1。</h4>
+</li>
+</ul>
+<p>PS：因为这里的长度\le 3×10^5，所以要开int64。</p>
+<h3 id="代码"><strong>代码</strong></h3>
+<pre><code class="language-pascal">var i,sum:longint;x:ansistring;s:int64;//不开int64见祖宗
+begin
+ readln(x);//读入x
+ for i:=1 to length(x)-1 do//1到字符串x的长度-1
+  begin
+   val(x[i]+x[i+1],sum);//将两位转换到sum变量里
+   if sum mod 4=0 then s:=s+i;//如果最后两位能被4整除，那么说明前面的任何一个数加上这两个数都可以被4整除
+   if (x[i]='0') or (x[i]='4') or (x[i]='8') then s:=s+1;//如果这个数本身就能被4整数，s加1
+  end;
+ if (x[length(x)]='0') or (x[length(x)]='4') or (x[length(x)]='8') then inc(s);//特判最后一位
+ writeln(s);//输出
+end.
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[题解 CF863A 【Quasi-palindrome】]]></title>
+        <id>https://wzy-123.github.io/post/ti-jie-cf863a-quasi-palindrome/</id>
+        <link href="https://wzy-123.github.io/post/ti-jie-cf863a-quasi-palindrome/">
+        </link>
+        <updated>2020-06-02T12:26:47.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="题目"><strong>题目</strong></h3>
+<p>准回文数是这样一个数字，在这个数字的前面添加一些前导0（可能不添加），使它变成一个回文串。现在给你一个数，判断是否为准回文数。</p>
+<h3 id="思路"><strong>思路</strong></h3>
+<p>既然说要在<strong>前面添加0</strong>，那我们不妨把<strong>后面的0全部删除</strong>，再判断删完的数是否是回文数。</p>
+<p>考虑到判断回文数，用<strong>字符串</strong>更简便。</p>
+<p>将后面的0全部删除，就要用到一个函数：delete。</p>
+<p>delete的作用：举个栗子，delete('123',2,1)表示从<strong>字符串</strong>123中，从第二位开始，删除一个。</p>
+<p>那么将后面的0全部删除这一操作的代码也就出来了（如下）</p>
+<p>while n[length(n)]='0' do delete(n,length(n),1);</p>
+<p>上面一个程序的解(ren)释(hua)：当<strong>字符串</strong>n的最后一位为0时，删除最后一位。</p>
+<h3 id="代码"><strong>代码</strong></h3>
+<pre><code class="language-pascal">var
+  n:string;//定义n字符串
+ function work(n:string):string;//判断回文数的函数
+  var
+    i:longint;
+  begin
+    for i:=1 to length(n) div 2 do if n[length(n)-i+1]&lt;&gt;n[i] then exit('NO');//若不成回文数，输出NO
+    exit('YES');//成回文数
+  end;
+begin
+  readln(n);//读入n
+  while n[length(n)]='0' do delete(n,length(n),1);//删除末尾0
+  writeln(work(n));//输出
+end.//求过QwQ
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[题解 P6559 【[SBCOI2020]小镇】]]></title>
         <id>https://wzy-123.github.io/post/xiao-zhen-ti-jie/</id>
         <link href="https://wzy-123.github.io/post/xiao-zhen-ti-jie/">
         </link>

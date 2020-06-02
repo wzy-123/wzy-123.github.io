@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>题解 | WZY&#39;s blog</title>
+<title>题解 CF863A 【Quasi-palindrome】 | WZY&#39;s blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,12 @@
 
 
 
-    <meta name="description" content="">
+    <meta name="description" content="题目
+准回文数是这样一个数字，在这个数字的前面添加一些前导0（可能不添加），使它变成一个回文串。现在给你一个数，判断是否为准回文数。
+思路
+既然说要在前面添加0，那我们不妨把后面的0全部删除，再判断删完的数是否是回文数。
+考虑到判断回文数，..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -92,28 +97,54 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 题解</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://wzy-123.github.io/post/xiao-zhen-ti-jie/">
-                  <h2 class="post-title">题解 P6559 【[SBCOI2020]小镇】</h2>
-                </a>
-                <div class="post-date">
-                  2020-06-02
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">题解 CF863A 【Quasi-palindrome】</h2>
+            <div class="post-date">2020-06-02</div>
+            
+            <div class="post-content" v-pre>
+              <h3 id="题目"><strong>题目</strong></h3>
+<p>准回文数是这样一个数字，在这个数字的前面添加一些前导0（可能不添加），使它变成一个回文串。现在给你一个数，判断是否为准回文数。</p>
+<h3 id="思路"><strong>思路</strong></h3>
+<p>既然说要在<strong>前面添加0</strong>，那我们不妨把<strong>后面的0全部删除</strong>，再判断删完的数是否是回文数。</p>
+<p>考虑到判断回文数，用<strong>字符串</strong>更简便。</p>
+<p>将后面的0全部删除，就要用到一个函数：delete。</p>
+<p>delete的作用：举个栗子，delete('123',2,1)表示从<strong>字符串</strong>123中，从第二位开始，删除一个。</p>
+<p>那么将后面的0全部删除这一操作的代码也就出来了（如下）</p>
+<p>while n[length(n)]='0' do delete(n,length(n),1);</p>
+<p>上面一个程序的解(ren)释(hua)：当<strong>字符串</strong>n的最后一位为0时，删除最后一位。</p>
+<h3 id="代码"><strong>代码</strong></h3>
+<pre><code class="language-pascal">var
+  n:string;//定义n字符串
+ function work(n:string):string;//判断回文数的函数
+  var
+    i:longint;
+  begin
+    for i:=1 to length(n) div 2 do if n[length(n)-i+1]&lt;&gt;n[i] then exit('NO');//若不成回文数，输出NO
+    exit('YES');//成回文数
+  end;
+begin
+  readln(n);//读入n
+  while n[length(n)]='0' do delete(n,length(n),1);//删除末尾0
+  writeln(work(n));//输出
+end.//求过QwQ
+</code></pre>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://wzy-123.github.io/post/xiao-zhen-ti-jie/">
+                  <h3 class="post-title">
+                    题解 P6559 【[SBCOI2020]小镇】
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
 
         </div>
       </div>
