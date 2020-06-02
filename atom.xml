@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzy-123.github.io</id>
     <title>WZY&apos;s blog</title>
-    <updated>2020-06-02T12:27:52.550Z</updated>
+    <updated>2020-06-02T12:31:10.997Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzy-123.github.io"/>
     <link rel="self" href="https://wzy-123.github.io/atom.xml"/>
@@ -17,9 +17,9 @@
         <updated>2020-06-02T12:27:35.000Z</updated>
         <content type="html"><![CDATA[<p><s>没人写题解？我来水一发QAQ。</s></p>
 <h3 id="题目"><strong>题目</strong></h3>
-<p>给出一个长度\le 3×10^5的字符串S，求S中能被4整除的字串有多少个。</p>
+<p>给出一个长度&lt;=3×10^5的字符串S，求S中能被4整除的字串有多少个。</p>
 <h3 id="思路"><strong>思路</strong></h3>
-<p>因为长度\le 3×10^5，故用单重循环做。</p>
+<p>因为长度&lt;=3×10^5，故用单重循环做。</p>
 <p>因为是被<strong>4整除</strong>，所以只用判断最后两位是否能被4整除即可。</p>
 <p>抓住以上重点，单重循环要枚举什么也就出来了：<code>从第一位枚举到字符串长度减一位，将S[i]和S[i+1]转成数字，累加即可</code>。</p>
 <h3 id="累加分两种情况">累加分两种情况</h3>
@@ -31,7 +31,7 @@
 <h4 id="判断si是否是4的倍数如果是和加1">判断S[i]是否是4的倍数，如果是，和加1。</h4>
 </li>
 </ul>
-<p>PS：因为这里的长度\le 3×10^5，所以要开int64。</p>
+<p>PS：因为这里的长度&lt;=3×10^5，所以要开int64。</p>
 <h3 id="代码"><strong>代码</strong></h3>
 <pre><code class="language-pascal">var i,sum:longint;x:ansistring;s:int64;//不开int64见祖宗
 begin

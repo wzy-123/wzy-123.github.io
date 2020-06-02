@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://wzy-123.github.io/favicon.ico?v=1591100870362">
+<link rel="shortcut icon" href="https://wzy-123.github.io/favicon.ico?v=1591101042714">
 <link rel="stylesheet" href="https://wzy-123.github.io/styles/main.css">
 
 
@@ -20,11 +20,11 @@
 
     <meta name="description" content="没人写题解？我来水一发QAQ。
 题目
-给出一个长度\le 3×10^5的字符串S，求S中能被4整除的字串有多少个。
+给出一个长度&lt;=3×10^5的字符串S，求S中能被4整除的字串有多少个。
 思路
-因为长度\le 3×10^5，故用单重循环做。
+因为长度&lt;=3×10^5，故用单重循环做。
 因为是被4整除，所以只用判断最后两位是否能被4整除即可。
-抓住以上重点..." />
+抓住以上..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -34,7 +34,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://wzy-123.github.io">
-        <img src="https://wzy-123.github.io/images/avatar.png?v=1591100870362" class="site-logo">
+        <img src="https://wzy-123.github.io/images/avatar.png?v=1591101042714" class="site-logo">
         <h1 class="site-title">WZY&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -106,9 +106,9 @@
             <div class="post-content" v-pre>
               <p><s>没人写题解？我来水一发QAQ。</s></p>
 <h3 id="题目"><strong>题目</strong></h3>
-<p>给出一个长度\le 3×10^5的字符串S，求S中能被4整除的字串有多少个。</p>
+<p>给出一个长度&lt;=3×10^5的字符串S，求S中能被4整除的字串有多少个。</p>
 <h3 id="思路"><strong>思路</strong></h3>
-<p>因为长度\le 3×10^5，故用单重循环做。</p>
+<p>因为长度&lt;=3×10^5，故用单重循环做。</p>
 <p>因为是被<strong>4整除</strong>，所以只用判断最后两位是否能被4整除即可。</p>
 <p>抓住以上重点，单重循环要枚举什么也就出来了：<code>从第一位枚举到字符串长度减一位，将S[i]和S[i+1]转成数字，累加即可</code>。</p>
 <h3 id="累加分两种情况">累加分两种情况</h3>
@@ -120,7 +120,7 @@
 <h4 id="判断si是否是4的倍数如果是和加1">判断S[i]是否是4的倍数，如果是，和加1。</h4>
 </li>
 </ul>
-<p>PS：因为这里的长度\le 3×10^5，所以要开int64。</p>
+<p>PS：因为这里的长度&lt;=3×10^5，所以要开int64。</p>
 <h3 id="代码"><strong>代码</strong></h3>
 <pre><code class="language-pascal">var i,sum:longint;x:ansistring;s:int64;//不开int64见祖宗
 begin
