@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://wzy-123.github.io/favicon.ico?v=1591100248967">
+<link rel="shortcut icon" href="https://wzy-123.github.io/favicon.ico?v=1591100374982">
 <link rel="stylesheet" href="https://wzy-123.github.io/styles/main.css">
 
 
@@ -25,10 +25,11 @@
 
 
     <meta name="description" content="题外话
-考试的时候傻掉了，忘记用mapmapmap了。。
-显而易见，这道题用mapmapmap最简单（不用mapmapmap，反正我考试的时候就。。）
+考试的时候傻掉了，忘记用map了。。
+显而易见，这道题用map最简单（不用map，反正我考试的时候就。。）
 思路
-读入k个数，建一个图记录他们出现的位置，然后四面八方的加起来，最后输出的数要除以2..." />
+读入k个数，建一个图记录他们出现的位置，然后四面八方的加起来，最后输出的数要除以2。
+别的不讲（太水了），讲一下为什么..." />
     <meta name="keywords" content="题解" />
   </head>
   <body>
@@ -38,7 +39,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://wzy-123.github.io">
-        <img src="https://wzy-123.github.io/images/avatar.png?v=1591100248967" class="site-logo">
+        <img src="https://wzy-123.github.io/images/avatar.png?v=1591100374982" class="site-logo">
         <h1 class="site-title">WZY&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -109,15 +110,15 @@
             
             <div class="post-content" v-pre>
               <h3 id="题外话"><strong>题外话</strong></h3>
-<p>考试的时候傻掉了，忘记用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">map</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">p</span></span></span></span>了。。</p>
-<p>显而易见，这道题用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">map</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">p</span></span></span></span>最简单（不用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">map</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">p</span></span></span></span>，反正我考试的时候就。。）</p>
+<p>考试的时候傻掉了，忘记用map了。。</p>
+<p>显而易见，这道题用map最简单（不用map，反正我考试的时候就。。）</p>
 <h3 id="思路"><strong>思路</strong></h3>
 <p>读入<strong>k个数</strong>，建一个图记录他们出现的位置，然后四面八方的加起来，最后输出的数要<strong>除以2</strong>。</p>
-<p>别的不讲（太水了），讲一下为什么要除以<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>。</p>
+<p>别的不讲（太水了），讲一下为什么要除以2。</p>
 <p>以题目样例为例：</p>
 <figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/tbjkl3ul.png" alt="" loading="lazy"></figure>
 <p>程序运行时，如果不除以2，每个就会多算一份。</p>
-<p>以<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mn>2</mn><mo separator="true">,</mo><mn>2</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(2,2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mclose">)</span></span></span></span>为例，将他四个方向的数加起来，和为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，但是这个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>再算<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mn>2</mn><mo separator="true">,</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(2,1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>的时候已经算过了，所以最后的结果要除以<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>。</p>
+<p>以(2,2)为例，将他四个方向的数加起来，和为1，但是这个1再算(2,1)的时候已经算过了，所以最后的结果要除以2。</p>
 <h3 id="代码应该很好理解"><strong>代码（应该很好理解）</strong></h3>
 <pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
 using namespace std;
