@@ -2,13 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzy-123.github.io</id>
     <title>WZY&apos;s blog</title>
-    <updated>2020-06-02T12:32:07.164Z</updated>
+    <updated>2020-06-02T12:42:08.280Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzy-123.github.io"/>
     <link rel="self" href="https://wzy-123.github.io/atom.xml"/>
     <logo>https://wzy-123.github.io/images/avatar.png</logo>
     <icon>https://wzy-123.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, WZY&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[题解 AT3699 【オークション】]]></title>
+        <id>https://wzy-123.github.io/post/ti-jie-at3699-okusiyon/</id>
+        <link href="https://wzy-123.github.io/post/ti-jie-at3699-okusiyon/">
+        </link>
+        <updated>2020-06-02T12:41:44.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="题目"><strong>题目</strong></h3>
+<p>输入X和K</p>
+<p>输出一个数Y(当然这个数没有前导0)，要求：</p>
+<ul>
+<li>Y&gt;X</li>
+<li>Y的末尾K位必须都是0</li>
+<li>同时Y尽量小</li>
+</ul>
+<h3 id="思路"><strong>思路</strong></h3>
+<p>看样例</p>
+<h4 id="输入">输入</h4>
+<p><code>2018 2</code></p>
+<h4 id="输出">输出</h4>
+<p><code>2100</code></p>
+<p>我们模拟一下这个转换的过程：</p>
+<ol>
+<li>将1~2位的数字拷出来，加一，将这个数存到变量x里</li>
+<li>在x的末尾补0</li>
+<li>输出x</li>
+</ol>
+<h3 id="代码"><strong>代码</strong></h3>
+<pre><code class="language-pascal">var x,k,i:longint;q,w:string;//定义
+begin
+ readln(x,k);//读入x和k
+ str(x,q);w:=copy(q,1,length(q)-k);//拷贝出1~位数-k的数
+ val(w,x);inc(x);str(x,w);//加1
+ for i:=1 to k do w:=w+'0';//补0
+ writeln(w);//输出
+end.
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[题解 CF628B 【New Skateboard】]]></title>
         <id>https://wzy-123.github.io/post/ti-jie-cf628b-new-skateboard/</id>
