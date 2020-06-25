@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzy-123.github.io</id>
     <title>WZY&apos;s blog</title>
-    <updated>2020-06-25T02:56:14.907Z</updated>
+    <updated>2020-06-25T03:15:53.911Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzy-123.github.io"/>
     <link rel="self" href="https://wzy-123.github.io/atom.xml"/>
@@ -11,8 +11,8 @@
     <rights>All rights reserved 2020, WZY&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[题解 AT3699 【オークション】]]></title>
-        <id>https://wzy-123.github.io/ti-jie-at3699-okusiyon/</id>
-        <link href="https://wzy-123.github.io/ti-jie-at3699-okusiyon/">
+        <id>https://wzy-123.github.io/post/ti-jie-at3699-okusiyon/</id>
+        <link href="https://wzy-123.github.io/post/ti-jie-at3699-okusiyon/">
         </link>
         <updated>2020-06-02T12:41:44.000Z</updated>
         <content type="html"><![CDATA[<h3 id="题目"><strong>题目</strong></h3>
@@ -49,8 +49,8 @@ end.
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 CF628B 【New Skateboard】]]></title>
-        <id>https://wzy-123.github.io/ti-jie-cf628b-new-skateboard/</id>
-        <link href="https://wzy-123.github.io/ti-jie-cf628b-new-skateboard/">
+        <id>https://wzy-123.github.io/post/ti-jie-cf628b-new-skateboard/</id>
+        <link href="https://wzy-123.github.io/post/ti-jie-cf628b-new-skateboard/">
         </link>
         <updated>2020-06-02T12:27:35.000Z</updated>
         <content type="html"><![CDATA[<p><s>没人写题解？我来水一发QAQ。</s></p>
@@ -88,8 +88,8 @@ end.
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 CF863A 【Quasi-palindrome】]]></title>
-        <id>https://wzy-123.github.io/ti-jie-cf863a-quasi-palindrome/</id>
-        <link href="https://wzy-123.github.io/ti-jie-cf863a-quasi-palindrome/">
+        <id>https://wzy-123.github.io/post/ti-jie-cf863a-quasi-palindrome/</id>
+        <link href="https://wzy-123.github.io/post/ti-jie-cf863a-quasi-palindrome/">
         </link>
         <updated>2020-06-02T12:26:47.000Z</updated>
         <content type="html"><![CDATA[<h3 id="题目"><strong>题目</strong></h3>
@@ -122,8 +122,8 @@ end.//求过QwQ
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 P6559 【[SBCOI2020]小镇】]]></title>
-        <id>https://wzy-123.github.io/xiao-zhen-ti-jie/</id>
-        <link href="https://wzy-123.github.io/xiao-zhen-ti-jie/">
+        <id>https://wzy-123.github.io/post/xiao-zhen-ti-jie/</id>
+        <link href="https://wzy-123.github.io/post/xiao-zhen-ti-jie/">
         </link>
         <updated>2020-06-02T12:15:58.000Z</updated>
         <content type="html"><![CDATA[<h3 id="题外话"><strong>题外话</strong></h3>
