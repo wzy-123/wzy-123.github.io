@@ -2231,54 +2231,7 @@ body {
     }
     .mist .site-title i {
       background: #FFFFFFfe;
-    }<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <!--引入reset.css重置样式-->
-  <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.min.css" rel="stylesheet">
-  <style type="text/css">
-    ul { /*ul定位到页面中间位置*/
-      margin: 50px auto;
-      width: 500px;
-    }
-    li { /*设置li位置、字体大小*/
-      position: relative;
-      font-size: 25px;
-      float: left;
-      padding: 0 20px 0 20px;
-    }
-    /*利用:before实现下划线宽度从0-100%*/
-    li:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 100%; /*下划线从右侧开始显示*/
-      width: 0;
-      height: 100%;
-      border-bottom: 2px solid red;
-      transition: 0.2s all linear; /*动画效果*/
-    }
-    li:hover:before {
-      left: 0; /*鼠标滑过时，下划线从右向左移动*/
-      width: 100%; /*同时，下划线宽度从0-100%*/
-    }
-    li:hover ~ li:before { /*~ 选择器：查找指定元素后面的所有兄弟结点*/
-      left: 0; /*处于hover后面元素的下划线从左侧开始显示*/
-    }
-  </style>
-</head>
-<body>
-<ul class="container">
-  <li>简介</li>
-  <li>详情</li>
-  <li>帮助</li>
-  <li>我的</li>
-</ul>
-</body>
-</html>
-.box-shadow-wrapper {
+    }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
       cursor: default;
