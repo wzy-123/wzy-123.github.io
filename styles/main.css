@@ -2234,9 +2234,9 @@ body {
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
-      cursor: default;
+      cursor: url('/media/curs/https://files.cnblogs.com/files/laoguantongxiegogo/pointer_24px_1231389_easyicon.net.ico.cur'), default;
     }a {
-      cursor: pointer;
+      cursor: url('/media/curs/https://blog-static.cnblogs.com/files/laoguantongxiegogo/click_24px_1231393_easyicon.net.ico.cur'), pointer !important;
     }input, textarea, code {
       cursor: text;
     }code > span.copy-code {
