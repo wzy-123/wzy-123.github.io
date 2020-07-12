@@ -2231,12 +2231,17 @@ body {
     }
     .mist .site-title i {
       background: #FFFFFFfe;
-    }.box-shadow-wrapper {
+    }a:hover {
+        cursor:url(https://files.cnblogs.com/files/laoguantongxiegogo/click_24px_1231393_easyicon.net.ico),auto;
+ }
+body {
+        cursor:url(https://files.cnblogs.com/files/laoguantongxiegogo/pointer_24px_1231389_easyicon.net.ico),auto;
+ }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
-      cursor: url('/media/curs/https://files.cnblogs.com/files/laoguantongxiegogo/pointer_24px_1231389_easyicon.net.ico.cur'), default;
+      cursor: default;
     }a {
-      cursor: url('/media/curs/https://blog-static.cnblogs.com/files/laoguantongxiegogo/click_24px_1231393_easyicon.net.ico.cur'), pointer !important;
+      cursor: pointer;
     }input, textarea, code {
       cursor: text;
     }code > span.copy-code {
