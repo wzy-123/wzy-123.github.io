@@ -2231,12 +2231,7 @@ body {
     }
     .mist .site-title i {
       background: #FFFFFFfe;
-    }a:hover {
-        cursor:url(https://files.cnblogs.com/files/laoguantongxiegogo/click_24px_1231393_easyicon.net.ico),auto;
- }
-body {
-        cursor:url(https://files.cnblogs.com/files/laoguantongxiegogo/pointer_24px_1231389_easyicon.net.ico),auto;
- }.box-shadow-wrapper {
+    }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
       cursor: default;
