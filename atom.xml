@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzy-123.github.io</id>
     <title>WZY&apos;s blog</title>
-    <updated>2020-08-24T02:54:23.167Z</updated>
+    <updated>2020-08-24T02:54:52.260Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzy-123.github.io"/>
     <link rel="self" href="https://wzy-123.github.io/atom.xml"/>
@@ -89,7 +89,7 @@ end.
 <li>输出x</li>
 </ol>
 <h3 id="代码"><strong>代码</strong></h3>
-<pre><code class="language-pascal">var x,k,i:longint;q,w:string;//定义
+<pre><code class="language-cpp">var x,k,i:longint;q,w:string;//定义
 begin
  readln(x,k);//读入x和k
  str(x,q);w:=copy(q,1,length(q)-k);//拷贝出1~位数-k的数
@@ -124,7 +124,7 @@ end.
 </ul>
 <p>PS：因为这里的长度&lt;=3×10^5，所以要开int64。</p>
 <h3 id="代码"><strong>代码</strong></h3>
-<pre><code class="language-pascal">var i,sum:longint;x:ansistring;s:int64;//不开int64见祖宗
+<pre><code class="language-cpp">var i,sum:longint;x:ansistring;s:int64;//不开int64见祖宗
 begin
  readln(x);//读入x
  for i:=1 to length(x)-1 do//1到字符串x的长度-1
@@ -156,7 +156,7 @@ end.
 <p>while n[length(n)]='0' do delete(n,length(n),1);</p>
 <p>上面一个程序的解(ren)释(hua)：当<strong>字符串</strong>n的最后一位为0时，删除最后一位。</p>
 <h3 id="代码"><strong>代码</strong></h3>
-<pre><code class="language-pascal">var
+<pre><code class="language-cpp">var
   n:string;//定义n字符串
  function work(n:string):string;//判断回文数的函数
   var
