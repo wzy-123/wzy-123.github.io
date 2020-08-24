@@ -9,14 +9,14 @@
 <meta name="description" content="">
 <meta name="theme-color" content="#000">
 <title>WZY&#39;s blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1598228690263">
+<link rel="shortcut icon" href="/favicon.ico?v=1598232332423">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/androidstudio.css"
+<link href="/media/hljs/styles/monokai.css"
   rel="stylesheet">
 
 <link rel="stylesheet" href="/styles/main.css">
@@ -126,7 +126,7 @@
               <li class="nav-item ">
                 <a href="/friends/" target="_self">
                   
-                    <i class="fa fa-address-book"></i> 友链
+                    <i class="fa fa-address-book"></i> 友情链接
                   
                 </a>
               </li>
@@ -203,13 +203,6 @@
   </div>
   
     
-      <div class="sidebar-item">
-        <span class="site-item-rss">
-            <i class="fa fa-rss"></i>
-            <a href="https://wzy-123.github.io/atom.xml" target="_blank">RSS</a>
-        </span>
-      </div>
-    
   
   
 
@@ -239,22 +232,8 @@
         <div class="section-box gemini box-shadow-wrapper">
           <section class="friends-section bg-color slide-down-in">
             <div class="firends-box">
-              <h1 class="firends-title" itemprop="name headline">友链</h1>
+              <h1 class="firends-title" itemprop="name headline">友情链接</h1>
               
-              
-              <a href="https://licykoc.gitee.io/" target="_blank">
-                <div class="firends-item">
-                  <img src="https://cdn.luogu.com.cn/upload/usericon/175456.png" />
-                  <div class="right">
-                    <div class="top">
-                      Licykoc
-                    </div>
-                    <div class="bottom">
-                      
-                    </div>
-                  </div>
-                </div>
-              </a>
               
               
             </div>
@@ -307,13 +286,6 @@
     </span>
     
   </div>
-  
-  
-  
-  <div class="bg-img">
-    <img src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture" />
-  </div>
-  
   
   
   
@@ -991,7 +963,7 @@
   }
 
   // 链接跳转
-  let newWindow = 'true'
+  let newWindow = 'false'
   if (newWindow === 'true') {
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
@@ -1010,7 +982,7 @@
   hljs.initHighlightingOnLoad();
   
   // 离开当前页title变化
-  var leaveTitle = "网页崩溃啦~";
+  var leaveTitle = "";
   if (leaveTitle) {
     document.addEventListener('visibilitychange', function () {
       if (document.visibilityState == 'hidden') {
@@ -1026,7 +998,7 @@
   </div>
 </body>
 
-  <div class="search-mask" id="search_mask" style="display: none;">
+<div class="search-mask" id="search_mask" style="display: none;">
   <div class="search-box">
     <div class="search-title">
       <i class="fa fa-search"></i>
@@ -1352,6 +1324,28 @@ int main()
 
 <input hidden id="copy" />
 <script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
   let language = '';
   if (language !== '') {
     let map = new Map();
@@ -1501,6 +1495,19 @@ int main()
 
 
 <script src="/media/js/cool.js"></script>
+
+
+
+  <div class="snow-container"></div>
+  <script src="/media/js/bg/canvas-nest.js"></script>
+  <script>
+  const config = {
+    color: '255,0,0',
+    count: 88,
+  };
+  // Using config rendering effect at 'element'.
+  const cn = new CanvasNest(document.querySelector('.snow-container'), config);
+  </script>
 
 
 </html>
