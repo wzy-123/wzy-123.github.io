@@ -2,13 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzy-123.github.io</id>
     <title>WZY&apos;s blog</title>
-    <updated>2020-08-24T02:54:52.260Z</updated>
+    <updated>2020-08-26T10:07:03.295Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzy-123.github.io"/>
     <link rel="self" href="https://wzy-123.github.io/atom.xml"/>
     <logo>https://wzy-123.github.io/images/avatar.png</logo>
     <icon>https://wzy-123.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, WZY&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[如何用Gridea搭建独立博客]]></title>
+        <id>https://wzy-123.github.io/post/ru-he-yong-gridea-da-jian-du-li-bo-ke/</id>
+        <link href="https://wzy-123.github.io/post/ru-he-yong-gridea-da-jian-du-li-bo-ke/">
+        </link>
+        <updated>2020-08-26T10:06:36.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="预处理">预处理</h1>
+<p>一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>i</mi><mi>t</mi><mi>H</mi><mi>u</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">GitHub</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord mathdefault">u</span><span class="mord mathdefault">b</span></span></span></span>账号；</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>r</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">Gridea</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span></span></span></span>。</p>
+<h1 id="1-下载gridea">1. 下载Gridea</h1>
+<p>进入<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>r</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">Gridea</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span></span></span></span>的官网下载即可：https://gridea.dev/</p>
+<p>如果下载的比较慢，<s>没办法</s></p>
+<p>我上传到百网盘了：</p>
+<h3 id="链接httpspanbaiducoms1suzzruki0gsxqz7kzzcusq">链接：https://pan.baidu.com/s/1SUzzRUkI0gSxqZ7kzzCUSQ</h3>
+<h3 id="提取码efxh">提取码：efxh</h3>
+<h1 id="2-创建github账号">2. 创建GitHub账号</h1>
+<p>不用多说了，一个邮箱搞定。</p>
+<h1 id="3-创建仓库">3. 创建仓库</h1>
+<p>登录<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>i</mi><mi>t</mi><mi>H</mi><mi>u</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">GitHub</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord mathdefault">u</span><span class="mord mathdefault">b</span></span></span></span>，点击右上角的<code>+</code>，点击<code>New repository</code>进入创建仓库的页面。</p>
+<figure data-type="image" tabindex="1"><img src="https://s1.ax1x.com/2020/08/26/dWZMVK.png" alt="" loading="lazy"></figure>
+<h1 id="4-配置远程连接">4. 配置远程连接</h1>
+<p>打开<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>r</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">Gridea</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span></span></span></span>，点击<code>远 程</code></p>
+<figure data-type="image" tabindex="2"><img src="https://s1.ax1x.com/2020/08/26/dWK5vQ.png" alt="" loading="lazy"></figure>
+<h1 id="5-上传到internet">5. 上传到Internet</h1>
+<p>点击<code>同 步</code>，稍等片刻即可。</p>
+<h1 id="其他">其他</h1>
+<h2 id="写文章">写文章</h2>
+<p>点击<code>文 章</code>,点击右上角的<code>+</code>即可创建新文章；点击旧文章即可编辑以前的文章</p>
+<p>Ps：文章更新后要记得<code>同 步</code>。</p>
+<h2 id="换主题">换主题</h2>
+<p>点击<code>主 题</code>，点击<code>更多主题</code></p>
+<figure data-type="image" tabindex="3"><img src="https://s1.ax1x.com/2020/08/26/dWQ1m9.png" alt="" loading="lazy"></figure>
+<p>上面有很多主题，这里选择<code>fog</code>主题。</p>
+<p>将<code>fog</code>主题文件下载出来，解压，将里面的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mi>o</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">fog</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span>文件夹拉出来。</p>
+<p>点击<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>r</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">Gridea</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span></span></span></span>左下角的<img src="https://s1.ax1x.com/2020/08/26/dWGOeg.png" alt="" loading="lazy"></p>
+<p>将里面的路径复制出来，在计算机里输入。</p>
+<p>点击<code>themes</code>，将主题文件夹拖进去。</p>
+<figure data-type="image" tabindex="4"><img src="https://s1.ax1x.com/2020/08/26/dWJa1P.png" alt="" loading="lazy"></figure>
+<p>重启<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>r</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">Gridea</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span><span class="mord mathdefault">a</span></span></span></span>，更改主题即可生效。</p>
+<p>（如果要自己设计，则点击<code>自定义主题</code>即可）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[最大公约数和最小公倍数问题]]></title>
         <id>https://wzy-123.github.io/post/zui-da-gong-yue-shu-he-zui-xiao-gong-bei-shu-wen-ti/</id>
