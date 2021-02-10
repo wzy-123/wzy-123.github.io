@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wzy-123.github.io</id>
     <title>WZY&apos;s blog</title>
-    <updated>2020-08-26T10:07:03.295Z</updated>
+    <updated>2021-02-10T02:19:00.574Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wzy-123.github.io"/>
     <link rel="self" href="https://wzy-123.github.io/atom.xml"/>
     <logo>https://wzy-123.github.io/images/avatar.png</logo>
     <icon>https://wzy-123.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, WZY&apos;s blog</rights>
+    <rights>All rights reserved 2021, WZY&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[如何用Gridea搭建独立博客]]></title>
         <id>https://wzy-123.github.io/post/ru-he-yong-gridea-da-jian-du-li-bo-ke/</id>
